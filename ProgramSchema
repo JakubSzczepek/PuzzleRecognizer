@@ -1,1 +1,81 @@
-<mxfile host="app.diagrams.net" modified="2021-01-16T19:55:37.116Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" version="14.2.4" etag="u828WJrOblF82qXApfFT" type="github"><diagram id="qXT-BdYrFdkSglG_bGVP">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-16T20:13:29.289Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="fMFnp0LQVMLAnphG-b2w" version="14.2.4" type="github">
+  <diagram id="qXT-BdYrFdkSglG_bGVP" name="Page-1">
+    <mxGraphModel dx="1550" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-14" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;INPUTS&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="550" y="10" width="540" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-1" value="Source Image" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="600" y="20" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-2" value="+Height&#xa;+Width" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="IgFs2pOWFHyb93uG4qaE-1">
+          <mxGeometry y="30" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-5" value="Edge Detector" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="160" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-6" value="Should detect edges on&#xa;source image returns&#xa;shapes of elements, creates&#xa;map of shapes" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="IgFs2pOWFHyb93uG4qaE-5">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IgFs2pOWFHyb93uG4qaE-2" target="IgFs2pOWFHyb93uG4qaE-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-9" value="If it is puzzle source" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IgFs2pOWFHyb93uG4qaE-7">
+          <mxGeometry x="-0.2416" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-10" value="Puzzle edge Detector" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="880" y="280" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-11" value="Should detect puzzle,&#xa;define edges of puzzle&#xa;and returns shape and&#xa;scale image to shapes map&#xa;if exist" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="IgFs2pOWFHyb93uG4qaE-10">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IgFs2pOWFHyb93uG4qaE-4" target="IgFs2pOWFHyb93uG4qaE-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-13" value="if image from box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IgFs2pOWFHyb93uG4qaE-2" target="IgFs2pOWFHyb93uG4qaE-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-3" value="Puzzle Image" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="880" y="120" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-4" value="+Height&#xa;+Width" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="IgFs2pOWFHyb93uG4qaE-3">
+          <mxGeometry y="30" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-15" value="Puzzel shape Matcher" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="480" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-16" value="Should match puzzle&#xa;position in shape map&#xa;base on shape of puzzel" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="IgFs2pOWFHyb93uG4qaE-15">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IgFs2pOWFHyb93uG4qaE-6" target="IgFs2pOWFHyb93uG4qaE-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IgFs2pOWFHyb93uG4qaE-11" target="IgFs2pOWFHyb93uG4qaE-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IgFs2pOWFHyb93uG4qaE-16" target="IgFs2pOWFHyb93uG4qaE-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IgFs2pOWFHyb93uG4qaE-4" target="IgFs2pOWFHyb93uG4qaE-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-21" value="Puzzel color Matcher" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="730" y="700" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="IgFs2pOWFHyb93uG4qaE-22" value="Should match puzzle&#xa;position base on colors" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="IgFs2pOWFHyb93uG4qaE-21">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
